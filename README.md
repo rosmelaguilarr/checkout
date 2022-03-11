@@ -51,6 +51,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 ## Features
 
