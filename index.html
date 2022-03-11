@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>My Gallery</title>
+</head>
+
+<body>
+    <section class="container">
+        <header class="header">
+            <h1 class="title">Checkout</h1>
+        </header>
+        <main class="main">
+            <form class="form" autocomplete="off">
+                <h3 class="form__subtitle">Contact infomation</h3>
+                
+                <label for="email">E-mail</label>
+                <div class="container-input">
+                    <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                    <span class="material-icons">
+                        markunread
+                    </span>
+                </div>
+                <label for="phone">Phone</label>
+                <div class="container-input">
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone..." pattern="[0-9]{3}-[0-9]{6}" title="Ejem: 083-205478 máximo 9 números" required>
+                    <span class="material-icons">
+                        call
+                    </span>
+                </div>
+
+                <h3 class="form__subtitle">Shipping address</h3>
+                
+                <label for="name">Full name</label>
+                <div class="container-input">
+                    <input type="text" id="name" name="name" value="Rodney Cotton" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$" title="Ejem: Rodney Cotton" required>
+                    <span class="material-icons">
+                        account_circle
+                    </span>
+                </div>
+                <label for="address">Address</label>
+                <div class="container-input">
+                    <input type="text" id="address" name="address" placeholder="Your address.." required>
+                    <span class="material-icons">
+                        home
+                    </span>
+                </div>
+                <label for="city">City</label>
+                <div class="container-input">
+                    <input type="text" id="city" name="city" placeholder="Your city.."  pattern="^([A-ZÁÉÍÓÚa-zñáéíóú]+[\s]*)+$" title="Solo letras" required>
+                    <span class="material-icons">
+                        apartment
+                    </span>
+                </div>
+                <div class="container-country-postal">
+                    <div class="country">
+                        <label>Country</label>
+                        <div class="container-input">
+                            <select name="country">
+                                <option value="bolivia">Bolivia</option>
+                                <option value="peru" selected>Perú</option>
+                                <option value="argentina">Argentina</option>
+                              </select>
+                            <span class="material-icons">
+                                public
+                            </span>
+                        </div>
+                    </div>
+                    <div class="postal">
+                        <label for="postal">Postal code</label>
+                        <div class="container-input">
+                            <input type="text" id="postal" name="postal" placeholder="Your postal.." pattern="[0-9]*" title="Solo números" required>
+                            <span class="material-icons">
+                                markunread_mailbox
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-checkbox">
+                    <input type="checkbox" id="save">
+                    <label for="save">Save this information for next time</label>
+                </div>
+                <input type="submit" value="Continue">
+            </form>
+
+            <section class="car">
+                <div class="container-products">
+                    <article class="product">
+                        <figure class="product__photo">
+                            <img src="img/photo1.png" alt="" class="product__img">
+                        </figure>
+                        <div class="product__description">
+                            <h2 class="product__name">Vintage Backbag</h2>
+                            <div class="container-price">
+                                <span class="product__price">$54.99</span>
+                                <span class="product__price product__price--previous">$94.99</span>
+                            </div>
+                    
+                            <div class="container-quantity">
+                                <button class="add">+</button>
+                                <input type="text" class="quantity" value="1">
+                                <button class="decrease">-</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <figure class="product__photo">
+                            <img src="img/photo2.png" alt="" class="product__img">
+                        </figure>
+                        <div class="product__description">
+                            <h2 class="product__name">Vintage Backbag</h2>
+                            <div class="container-price">
+                                <span class="product__price">$54.99</span>
+                                <span class="product__price product__price--previous">$94.99</span>
+                            </div>
+                    
+                            <div class="container-quantity">
+                                <button class="add">+</button>
+                                <input type="text" class="quantity" value="1">
+                                <button class="decrease">-</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="sumary">
+                    <div class="sumary__item">
+                        <span class="sumary__text">Shipping</span>
+                        <span class="sumary__number">$19</span>
+                    </div>
+                    <div class="sumary__item">
+                        <span class="sumary__text">Total</span>
+                        <span class="sumary__number">$148.98</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+
+
+      
+        <footer class="footer">
+            <p class="author">created by <strong><a href="https://github.com/rosmeltd?tab=repositories"
+                        target="_blank">rosmeltd</a></strong> - devChallenges.io</p>
+        </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
